@@ -8,6 +8,5 @@
 1. 只做核心算法，不真正处理网络事件；
 2. 空格之类的分隔符不是敏感词；
 3. 关键词有多个，每个最长不超多1000字符；
-4. 考虑Trie和Ring
-5. gradle test需要通过
-
+4. 可考虑Trie和Ring
+5. Linux下./gradlew test或者Windows下gradlew test，需要通过
