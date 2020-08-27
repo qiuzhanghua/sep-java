@@ -8,17 +8,17 @@ plugins {
 group = "com.example.talent.sep"
 version = "1.0-SNAPSHOT"
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
    testImplementation(kotlin("test-junit5"))
 //    testImplementation("org.junit.jupiter:junit-jupiter:5.6.2")
-   testRuntime("org.junit.jupiter:junit-jupiter-engine:5.6.2")
+   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.6.2")
 }
 
-tasks.withType<KotlinCompile>() {
+tasks.withType<JavaCompile> {
+    options.encoding = "UTF-8"
+}
+
+tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
 }
 
