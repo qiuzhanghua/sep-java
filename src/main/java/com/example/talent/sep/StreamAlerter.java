@@ -4,8 +4,8 @@ import java.util.Iterator;
 
 public class StreamAlerter {
 
-    private RingBuffer ring;
-    private Trie trie;
+    private final RingBuffer ring;
+    private final Trie trie;
 
     public StreamAlerter(String[] keys) {
         this.trie = new Trie();
