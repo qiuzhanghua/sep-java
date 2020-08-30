@@ -8,6 +8,10 @@ plugins {
 group = "com.example.talent.sep"
 version = "1.0-SNAPSHOT"
 
+repositories {
+    mavenCentral()
+}
+
 dependencies {
    testImplementation(kotlin("test-junit5"))
 //    testImplementation("org.junit.jupiter:junit-jupiter:5.6.2")
